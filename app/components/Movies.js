@@ -9,16 +9,13 @@ export default class Movies extends React.Component {
         }
     }
 
-
     componentDidMount() {
-        const api_key = '5623f69e33ca66e95505afa97a7d797d'
-
-        const endpoint = window.encodeURI('https://api.themoviedb.org/3/discover/movie?api_key=' + api_key)
-        fetch(endpoint)
-            .then((response) =>  response.json())
-            .then((repos) => this.setState({
-                repos
-            }))
+       getMovies()
+           .then((repos) => this.setState({
+               repos: {
+                   ...repos
+               }
+           }))
         console.log(this.state.repos)
     }
 
