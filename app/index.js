@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Movies from "./components/Movies";
 
 class App extends React.Component{
     render() {
         return (
             <div>
-                <h3>My Movie DB</h3>
+                <Movies/>
             </div>
         );
     }
