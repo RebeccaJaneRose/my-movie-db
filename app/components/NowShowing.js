@@ -9,13 +9,13 @@ function Movies({ repos }) {
 
         <HorizontalScroller>
         {repos.results.map((results, index) =>  {
-            const { title, release_date, vote_average, poster_path  } = results
-            const imageURl = "https://image.tmdb.org/t/p/w500" + poster_path
+            const { title, release_date, vote_average, poster_path  } = results;
+            const imageURl = "https://image.tmdb.org/t/p/w500" + poster_path;
             return (
                 <div className="card">
                     <img className="poster" src = { imageURl } />
                     <ul>
-                        <li className="title">
+                        <li>
                             { title }
                         </li>
                         <li>
