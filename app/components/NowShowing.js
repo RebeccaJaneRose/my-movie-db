@@ -1,6 +1,7 @@
 import React from 'react';
 import { getMoviesShowing } from '../utils/api'
 import HorizontalScroller from 'react-horizontal-scroll-container';
+import { FaStar } from 'react-icons/fa'
 
 
 function Movies({ repos }) {
@@ -15,17 +16,13 @@ function Movies({ repos }) {
                 <div className="card">
                     <img className="poster" src = { imageURl } />
                     <ul>
-                        <li>
+                        <li className="centered-label rating">
+                                <FaStar className="starIcon" color='rgb(255, 215, 0)' size={23}/>{ vote_average }
+                        </li>
+                        <li className="title">
                             { title }
                         </li>
-                        <li>
-                            { vote_average }
-                        </li>
-                        <li>
-                            { release_date }
-                        </li>
                     </ul>
-
                 </div>
             )
         })}

@@ -8,24 +8,23 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
 
+ul {
+    padding: 0;
+}
+
 li {
     list-style-type: none;
 }
 
+HorizontalScroller {
+    background-color: #ccc;
+}
+
 .card {
-    margin: 10px 0;
-    padding: 15px;
-    width: 300px;
-}
-
-.card-list {
-    margin: 10px 0;
-    padding: 15px;
-}
-
-.card-list li {
-    display: flex;
-    align-items: center;
+    margin: 10px 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border-radius: 8px;
 }
 
 .bg-light {
@@ -37,7 +36,13 @@ li {
 }
 
 .title {
+    margin: 0 0 0 5px;
     font-size: 15px;
+    font-weight: bold;
+}
+
+.releaseDate {
+    font-size: 10px;
 }
 
 .poster {
@@ -46,4 +51,17 @@ li {
     border-radius: 3px;
     margin: 0 auto;
     display: block;
+}
+
+.centered-label {
+    display: flex;
+    align-items: center;
+}
+
+.starIcon {
+    margin: 0 5px 0 0;
+}
+
+.rating {
+    color: #a9a4a4;
 }
