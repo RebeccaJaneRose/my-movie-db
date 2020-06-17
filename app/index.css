@@ -36,6 +36,11 @@ li {
     text-align: center;
 }
 
+.title {
+    font-size: 15px;
+    font-style: ;
+}
+
 .poster {
     width: 166px;
     height: 250px;
