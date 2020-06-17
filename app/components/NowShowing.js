@@ -20,6 +20,7 @@ function Movies({ repos }) {
                         </li>
                         <li>
                             { vote_average }
+                            
                         </li>
                         <li>
                             { release_date }
