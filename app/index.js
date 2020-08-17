@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Movies from "./components/Movies";
+import NowShowing from "./components/NowShowing";
 
 class App extends React.Component{
     render() {
         return (
             <div>
-                <Movies/>
+                <NowShowing/>
             </div>
         );
     }
