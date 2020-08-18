@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NowShowing from "./components/NowShowing";
+import WIPNowShowing from "./components/WIPNowShowing";
 
 class App extends React.Component{
     render() {
         return (
             <div>
-                <NowShowing/>
+                <WIPNowShowing/>
             </div>
         );
     }
